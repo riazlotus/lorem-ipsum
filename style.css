@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #FF6B6B 0%, #FFE66D 25%, #4ECDC4 50%, #95E1D3 75%, #C7CEEA 100%);
+    background-size: 400% 400%;
+    animation: gradientShift 15s ease infinite;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+@keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.section-center {
+    width: 100%;
+    max-width: 600px;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(220, 237, 255, 0.95) 100%);
+    border-radius: 20px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    padding: 40px;
+    border: 3px solid #FFE66D;
+}
+
+h3 {
+    text-align: center;
+    background: orange;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 30px;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.lorem-form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+label {
+    font-weight: 600;
+    background: orangered;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-size: 16px;
+}
+
+input[type="number"] {
+    padding: 12px 15px;
+    border: 3px solid #FFE66D;
+    border-radius: 8px;
+    font-size: 16px;
+    width: 110px;
+    background: #FFFEF7;
+    color: #333;
+    transition: all 0.3s ease;
+    font-weight: 600;
+}
+
+input[type="number"]:focus {
+    outline: none;
+    border-color: #FF6B6B;
+    box-shadow: 0 0 15px rgba(255, 107, 107, 0.3);
+    background: #FFF;
+}
+
+.btn {
+    padding: 12px 30px;
+    background: linear-gradient(135deg, #FF6B6B 0%, #FFB347 50%, #FF1493 100%);
+    background-size: 200% 200%;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0 4px 15px rgba(255, 107, 107, 0.3);
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(255, 107, 107, 0.5);
+    background-position: 200% center;
+}
+
+.btn:active {
+    transform: translateY(0);
+}
+
+.lorem-text {
+    line-height: 1.9;
+    color: #333;
+    font-size: 15px;
+    background: linear-gradient(to bottom, rgba(255, 230, 109, 0.1), rgba(78, 205, 196, 0.1));
+    padding: 20px;
+    border-radius: 10px;
+    border-left: 5px solid #4ECDC4;
+}
+
+.lorem-text p {
+    margin-bottom: 18px;
+    text-align: justify;
+    color: #444;
+    background: rgba(255, 255, 255, 0.7);
+    padding: 12px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.lorem-text p:hover {
+    background: rgba(255, 230, 109, 0.3);
+    transform: translateX(5px);
+}

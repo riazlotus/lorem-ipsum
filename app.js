@@ -1,0 +1,34 @@
+// lorem text
+const text = [
+    'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce porttitor malesuada neque, quis rhoncus ligula vehicula nec. Duis sit amet nisl convallis, pulvinar turpis nec, cursus purus. Curabitur auctor nibh vel vulputate euismod. Nam ligula lacus, bibendum mollis sollicitudin in, dignissim id nisl. Nam imperdiet consequat nisi, vel gravida mauris auctor eu. Nulla nec rhoncus dolor, nec ultricies risus. Proin non tempor sapien. Nunc lobortis justo eu vulputate mollis.',
+    'Aliquam lacinia suscipit enim vel ultrices. Vivamus vitae est vel nisi suscipit semper. Ut suscipit, ex vitae volutpat varius, turpis turpis rhoncus purus, ut ullamcorper tellus enim ut erat. Mauris congue, felis in mollis convallis, sapien sapien commodo quam, quis tempor mauris arcu sed purus. Etiam cursus dapibus imperdiet. In ut dui id nisl malesuada congue. Cras gravida rhoncus felis vel sagittis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
+    'Fusce nec purus ullamcorper, maximus lorem at, lacinia arcu. Praesent quis velit augue. Cras tincidunt dolor nec pellentesque feugiat. Nunc interdum, tortor eu ultricies efficitur, risus eros rutrum massa, a vestibulum tortor tortor id nisi. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Interdum et malesuada fames ac ante ipsum primis in faucibus. Duis aliquet fringilla felis, non iaculis mauris pharetra sit amet. Mauris in ultrices velit. Ut sagittis nisi dolor, in bibendum quam porta in. Duis feugiat metus in lectus rhoncus suscipit. Donec sed feugiat neque. Maecenas convallis gravida mauris. Phasellus eleifend pellentesque quam ut congue. Donec luctus, erat non ullamcorper consectetur, eros dolor varius mi, vitae condimentum mi dolor at enim. Cras eu quam vitae dui viverra elementum. Maecenas accumsan, dolor dictum varius bibendum, nisl est commodo nunc, egestas molestie nisi neque ac libero.',
+    'Nam maximus eget ex quis pulvinar. Vivamus id eros venenatis, commodo lacus eget, semper velit. Donec in urna dui. Etiam tellus lacus, mattis nec felis et, cursus aliquet felis. Curabitur nec cursus lectus. Curabitur et neque consectetur, pellentesque ipsum venenatis, volutpat neque. Vestibulum accumsan euismod arcu et venenatis.',
+    'Aliquam et orci a dolor eleifend finibus sit amet nec magna. In vestibulum sed eros non scelerisque. Sed quam enim, ornare ac lorem ut, placerat lacinia diam. In hac habitasse platea dictumst. Vestibulum rutrum non risus et semper. Sed consequat, odio at facilisis luctus, mi augue ornare erat, et auctor nisi turpis cursus mi. Nam et nisl tortor. Donec nec nisi at ligula pretium posuere. Maecenas a convallis erat. Nulla et hendrerit tortor. Aenean sed iaculis nunc, vehicula dignissim massa. Phasellus in risus eu nibh rhoncus luctus non quis leo. Vivamus rhoncus justo eros, et maximus diam pellentesque ac. Suspendisse sagittis vel est vitae laoreet. In hac habitasse platea dictumst.',
+    'Nullam tristique faucibus lacus. Vivamus at mi felis. Praesent eleifend libero commodo neque porta, eu lobortis purus mollis. Nam nec tortor at turpis dapibus iaculis sed eu elit. Phasellus sit amet massa est. Aenean commodo ex et feugiat condimentum. Integer sodales magna at nisl varius consequat. Etiam sit amet ligula ac elit bibendum laoreet et eu nulla. Etiam tincidunt nec metus non sollicitudin. Donec a libero eget magna vulputate hendrerit ac id libero.',
+    'Phasellus quis mollis erat. Nunc at bibendum tellus. Aliquam at ultrices libero, at imperdiet lacus. Donec eu porta magna. Nunc libero nisi, lacinia id lorem ut, vehicula molestie orci. Donec accumsan in velit sit amet sagittis. Integer bibendum vulputate justo, tempor commodo dui sagittis ut. Donec luctus diam ut nunc molestie fermentum. Ut ultrices purus ut sapien faucibus, ac cursus orci suscipit. Aliquam non lorem id mi tempus commodo. Integer eget justo gravida, scelerisque est et, sagittis lorem.',
+    'Sed scelerisque erat at nisi convallis condimentum. Aenean faucibus accumsan posuere. Donec id congue eros, quis interdum leo. Cras eget pharetra libero. Praesent a porta est. Pellentesque suscipit risus posuere, pulvinar neque vel, tempor enim. Sed dictum, ex sit amet finibus tempor, turpis lorem imperdiet nisl, vitae efficitur ante nibh in nisi. Etiam commodo turpis eu diam aliquet, sed congue ligula rhoncus. Etiam et orci augue. Duis ac eleifend mauris, id vehicula dolor.',
+    'Integer ac sem nisi. Vivamus nec vulputate neque, id mattis eros. Vivamus urna sem, gravida vitae ultricies in, sagittis non magna. Duis accumsan ante a lectus commodo, tincidunt dignissim dolor ullamcorper. Mauris dictum velit vitae magna fringilla, id sodales nibh faucibus. Integer mattis elit sed diam rutrum, sit amet rhoncus massa accumsan. In hac habitasse platea dictumst.',
+    'Curabitur auctor purus nec diam egestas tempus. Suspendisse velit sem, cursus vitae libero eu, scelerisque molestie ex. Nulla finibus blandit odio quis interdum. In nisi lacus, porttitor ac sagittis ut, pretium non orci. Maecenas laoreet tortor vel commodo elementum. Curabitur nec placerat risus. Maecenas semper dolor sit amet aliquet laoreet. Duis sodales id lectus non gravida. Cras facilisis ex sed lorem accumsan vehicula.',
+    'Aenean eget nunc ultricies, pretium magna id, tempus leo. Ut eu ipsum at massa molestie ornare. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. In eu consequat nunc. Nam commodo turpis eu auctor imperdiet. Cras laoreet dictum arcu et varius. Maecenas porta facilisis euismod. Duis vitae velit vel leo euismod sagittis. Praesent ac aliquet risus. Vivamus vestibulum augue in ante elementum, eget malesuada lacus egestas. Etiam a sodales sem. Praesent dolor tortor, auctor eget congue id, tristique nec leo. Etiam pellentesque sodales hendrerit. Duis rutrum lorem at metus aliquet lacinia. Proin eleifend libero ac elit rhoncus aliquam.'
+];
+
+const form = document.querySelector(".lorem-form");
+const amount = document.getElementById("amount");
+const result = document.querySelector(".lorem-text");
+
+form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    const value = parseInt(amount.value) || 1;
+    
+    // Clamp value between 1 and 10
+    const numParagraphs = Math.min(Math.max(value, 1), 10);
+    
+    // Generate paragraphs
+    let output = '';
+    for (let i = 0; i < numParagraphs; i++) {
+        output += '<p>' + text[Math.floor(Math.random() * text.length)] + '</p>';
+    }
+    
+    result.innerHTML = output;
+});
